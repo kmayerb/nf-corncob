@@ -1,6 +1,8 @@
 # nf-corncob
+
 A workflow for running corncob on large datasets
 
+[![Build Status](https://travis-ci.com/kmayerb/nf-corncob.svg?branch=master)](https://travis-ci.com/kmayerb/nf-corncob)
 
 This workflow was adapted from the statistic.nf module in Golob-Minot workflow [geneshot](https://github.com/Golob-Minot/geneshot/blob/master/modules/statistics.nf).
 
@@ -15,4 +17,14 @@ There are two inputs (csv.gz) and (csv) tabular files, whic must both contain th
 
 ## Testing
 
-The data folder will contain small inputs 
+The `/data` folder will contain small inputs.
+
+### Manifest 
+
+```
+name,readcounts_csv_gz,metadata_csv,formula
+```
+* name can be any unique run identifier 
+* readcounts_csv_gz - path to the file described in inputs
+* metadata_csv - path to the file described in inputs
+* formula - is the right hand side of an R formula (i.e. if model is y ~ x1 + x2) then formula is just `x1 + x2`
