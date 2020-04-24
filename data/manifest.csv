@@ -1,0 +1,2 @@
+name,readcounts_csv_gz,metadata_csv,formula
+s1,/Users/kmayerbl/active/nf-corncob/data/readcounts.csv.gz,/Users/kmayerbl/active/nf-corncob/data/metadata.csv,type + weight
